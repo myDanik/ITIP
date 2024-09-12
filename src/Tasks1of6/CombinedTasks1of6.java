@@ -1,3 +1,4 @@
+//GitHub: https://github.com/myDanik/ITIP/tree/master/src/Tasks1of6
 package Tasks1of6;
 
 public class CombinedTasks1of6 {
