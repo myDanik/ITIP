@@ -15,7 +15,7 @@ public class Mermaid extends Monster {
     public void attack() {
         int damage = getAttackPower();
 
-        // Увеличиваем урон, если русалка умеет петь
+
         if (canSing) {
             damage += 15;
             System.out.println(getName() + " uses her voice to mesmerize and attacks causing " + damage + " damage.");
