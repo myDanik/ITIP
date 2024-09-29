@@ -12,12 +12,14 @@ public class Goblin extends Monster {
         this("Goblin", 50, 5, "Club");
     }
 
+    @Override
     public void attack() {
         int totalDamage = getAttackPower();
         totalDamage += weapon.length();
         System.out.println(getName() + " attacks with " + weapon + " causing " + totalDamage + " damage.");
     }
 
+    @Override
     public void takeDamage(int damage) {
         setHealth(getHealth() - damage);
         System.out.println(getName() + " takes " + damage + " damage. Remaining health: " + getHealth());

@@ -7,6 +7,9 @@ public class Palindrome {
             if (isPalindrome(s)) {
                 System.out.println(s + " is a palindrome");
             }
+            else {
+                System.out.println(s + "is not a palindrome");
+            }
         }
     }
 

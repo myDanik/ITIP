@@ -11,7 +11,7 @@ public class Mermaid extends Monster {
     public Mermaid() {
         this("Mermaid", 70, 8, true);
     }
-
+    @Override
     public void attack() {
         int damage = getAttackPower();
 
@@ -23,7 +23,7 @@ public class Mermaid extends Monster {
             System.out.println(getName() + " attacks causing " + damage + " damage.");
         }
     }
-
+    @Override
     public void takeDamage(int damage) {
         setHealth(getHealth() - damage);
         System.out.println(getName() + " takes " + damage + " damage. Remaining health: " + getHealth());

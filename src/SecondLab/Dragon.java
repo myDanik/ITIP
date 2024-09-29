@@ -11,12 +11,12 @@ public class Dragon extends Monster {
     public Dragon() {
         this("Dragon", 150, 20, 50);
     }
-
+    @Override
     public void attack() {
         int totalDamage = getAttackPower() + firePower;
         System.out.println(getName() + " breathes fire causing " + totalDamage + " damage.");
     }
-
+    @Override
     public void takeDamage(int damage) {
         setHealth(getHealth() - damage);
         System.out.println(getName() + " takes " + damage + " damage. Remaining health: " + getHealth());
@@ -30,4 +30,5 @@ public class Dragon extends Monster {
         this.firePower = firePower;
     }
 }
+
 
