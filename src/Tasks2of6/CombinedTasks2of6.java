@@ -1,9 +1,8 @@
 package Tasks2of6;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+
 
 public class CombinedTasks2of6 {
     public static void main(String[] args) {
@@ -75,10 +74,7 @@ public class CombinedTasks2of6 {
         for (int i = 0; i< list.length; i++) {
 
             resultlist[i] = (list[i] - Arrays.stream(list).min().orElse(0.0))/(Arrays.stream(list).max().orElse(0.0)-Arrays.stream(list).min().orElse(0.0));
-            System.out.println((Arrays.stream(list).max().orElse(0.0)-Arrays.stream(list).min().orElse(0.0)));
         }
-        System.out.println(Arrays.stream(list).min().orElse(0.0));
-        System.out.println(Arrays.stream(list).max().orElse(0.0));
         return resultlist;
     }
 //    Task5
