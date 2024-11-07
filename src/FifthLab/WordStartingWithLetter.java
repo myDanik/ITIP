@@ -3,10 +3,10 @@ package FifthLab;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.ArrayList;
-
+import java.util.List;
 public class WordStartingWithLetter {
-    public static ArrayList<String> finder(String text, char letter){
-        ArrayList<String> result = new ArrayList<String>();
+    public static List<String> finder(String text, char letter){
+        List<String> result = new ArrayList<>();
         try {
             Pattern pattern = Pattern.compile("\\b"+String.valueOf(letter)+"[a-zA-Z]*\\b");
             Matcher matcher = pattern.matcher(text);
