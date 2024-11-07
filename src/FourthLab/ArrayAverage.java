@@ -2,7 +2,7 @@ package FourthLab;
 
 public class ArrayAverage {
     public static void main(String[] args) {
-        Object[] arr = {1, 2, 3, 4, 5.9, "qwe"};
+        Object[] arr = {};
         double sum = 0.0;
         boolean errors = false;
 
@@ -13,6 +13,11 @@ public class ArrayAverage {
                 } else {
                     sum += (Double) arr[i];
                 }
+            }
+
+            if (arr.length == 0) {
+                errors = true;
+                throw new ArithmeticException("Деление на ноль (пустой массив).");
             }
             System.out.println("Среднее: " + (double) sum / arr.length);
         } catch (ArrayIndexOutOfBoundsException e) {
