@@ -8,7 +8,7 @@ public class WordStartingWithLetter {
     public static List<String> finder(String text, char letter){
         List<String> result = new ArrayList<>();
         try {
-            Pattern pattern = Pattern.compile("\\b"+String.valueOf(letter)+"[a-zA-Z]*\\b");
+            Pattern pattern = Pattern.compile("\\b[a-zA-Z]*"+String.valueOf(letter)+"\\b");
             Matcher matcher = pattern.matcher(text);
             while (matcher.find()){
                 result.add(matcher.group());

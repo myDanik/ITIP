@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class IPValidator {
     public static boolean validator(String text){
         try {
-            Pattern pattern = Pattern.compile("(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\\.(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\\.(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])\\.(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])");
+            Pattern pattern = Pattern.compile("(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5])$");
             Matcher matcher = pattern.matcher(text);
             return matcher.matches();
         } catch (Exception e) {
