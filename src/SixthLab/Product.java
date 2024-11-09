@@ -27,7 +27,6 @@ class Product {
     public void incrementCount() {
         count++;
     }
-
 }
 class SalesManager {
     private final TreeSet<Product> soldProducts = new TreeSet<>(Comparator.comparing(Product::getName));
